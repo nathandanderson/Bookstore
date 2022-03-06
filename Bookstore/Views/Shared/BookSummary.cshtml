@@ -4,11 +4,16 @@
 @model Book
 
 <div class="card card-outline-primary m-1 p-1" style="border: 5px solid black;">
-    <h3>@Model.Title</h3>
+    <div>
+        <h3>@Model.Title</h3>
+        <span class="badge bg-info" style="float:right">
+            ISBN: @Model.Isbn
+        </span>
+    </div>
+
     <ul>
         <li>Author: @Model.Author</li>
         <li>Publisher: @Model.Publisher</li>
-        <li>ISBN: @Model.Isbn</li>
         <li>Classification: @Model.Classification</li>
         <li>Category: @Model.Category</li>
         <li>Number of Pages: @Model.PageCount</li>
