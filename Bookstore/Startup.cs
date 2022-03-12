@@ -75,7 +75,7 @@ namespace Bookstore
 
 
                 endpoints.MapDefaultControllerRoute();
-
+                 
                 endpoints.MapRazorPages();
 
             });
