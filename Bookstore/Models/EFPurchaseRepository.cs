@@ -13,7 +13,7 @@ namespace Bookstore.Models
         {
             context = temp;
         }
-        public IQueryable<Purchase> Purchase => context.Purchases.Include(x => x.Lines).ThenInclude(x=>x.Book);
+        public IQueryable<Purchase> Purchases => context.Purchases.Include(x => x.Lines).ThenInclude(x=>x.Book);
         public void SavePurchase(Purchase purchase)
         {
             context.AttachRange(purchase.Lines.Select(x => x.Book));

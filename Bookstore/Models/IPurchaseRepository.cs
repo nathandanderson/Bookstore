@@ -7,7 +7,7 @@ namespace Bookstore.Models
 {
     public interface IPurchaseRepository
     {
-        IQueryable<Purchase> Purchase { get; }
+        IQueryable<Purchase> Purchases { get; }
 
         void SavePurchase(Purchase purchase);
     }
