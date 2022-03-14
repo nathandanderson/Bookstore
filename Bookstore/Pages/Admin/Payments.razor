@@ -1,10 +1,10 @@
 ﻿@page "/admin/payments"
 @inherits OwningComponentBase<IPurchaseRepository>
 
-<PaymentTable TableTitle="Uncollected Payments" Payments="UncollectedPayments"
-             ButtonLabel="Received" PaymentSelected="CollectPayment"></PaymentTable>
+<PaymentTable TableTitle="Not Shipped" Payments="UncollectedPayments"
+             ButtonLabel="Shipped" PaymentSelected="CollectPayment"></PaymentTable>
 
-<PaymentTable TableTitle="Collected Payments" Payments="CollectedPayments" 
+<PaymentTable TableTitle="Shipped" Payments="CollectedPayments" 
               ButtonLabel="Reset" PaymentSelected="ResetPayment"></PaymentTable>
 
 
